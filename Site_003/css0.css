@@ -1,0 +1,176 @@
+﻿html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+header,
+leftmenu,
+main,
+footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+.container {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 100px 400px 135px;
+  border: solid 1px red;
+  grid-gap: 0px;
+  grid-template-areas:
+    "header header"
+    "leftmenu main"
+    "leftmenu footer";
+}
+
+.header {
+  grid-area: header;
+  padding: 0px;
+  border: solid 1px red;
+}
+
+.leftmenu {
+  grid-area: leftmenu;
+  padding: 0px;
+  border: solid 1px black;
+}
+
+.main {
+  grid-area: main;
+  border: solid 1px yellow;
+  background: #331111;
+  color: #d3a21c;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 0px;
+  border: solid 1px red;
+}
+
+.header,
+.leftmenu,
+.footer {
+  background: #332233;
+  color: orange;
+}
+
+#logo1 {
+  background: #ff000080;
+  width: 140px;
+  height: 90px;
+  padding: 5px;
+  border-radius: 0px 50px 50px 00px;
+}
+
+#logo2 {
+  background: #333333cc;
+  width: 200px;
+  height: 200px;
+  padding: 0px;
+  margin: 20px;
+  border-radius: 0px 50px 100px 50px;
+  float: right;
+  position: relative;
+  left: 0px;
+  top: -270px;
+  z-index: 2;
+}
+
+#fundo1 {
+  background: none;
+  width: 550px;
+  height: 550px;
+  padding: 0px;
+  border-radius: 0px 0px 0px 0px;
+  float: right;
+  position: relative;
+  z-index: 0;
+}
+
+#lista-01 {
+  font-family: times;
+  font-size: 20px;
+  color: red;
+  padding: 10px;
+  margin: 0px;
+}
+
+.link-lista-01 {
+  font-family: arial;
+  font-size: 15px;
+  color: #ccc;
+  padding: 0px 10px 0px 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.apresenta-01 {
+  font-family: arial;
+  font-size: 15px;
+  color: #ccc;
+  padding: 0px 10px 0px 10px;
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.patrocinadores-01 {
+  font-family: arial;
+  font-size: 15px;
+  color: #ccc;
+  padding: 0px 10px 0px 10px;
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-family: Oswald;
+  font-size: 20px;
+  color: #ccc;
+  padding: 10px;
+  margin: 20px 10px 0px 10px;
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  font-family: Oswald;
+  font-size: 15px;
+  color: #ccc;
+  padding: 10px;
+  margin: 0px 10px 0px 10px;
+  position: relative;
+  z-index: 1;
+}
+
+h3 {
+  font-family: Oswald;
+  font-size: 15px;
+  color: #ccc;
+  padding: 10px;
+  margin: 20px 10px 0px 10px;
+  position: relative;
+  z-index: 1;
+}
+
+h4 {
+  font-family: Oswald;
+  font-size: 15px;
+  color: #ccc;
+  padding: 10px;
+  margin: 20px 10px 0px 10px;
+  position: relative;
+  z-index: 1;
+}
