@@ -1,0 +1,103 @@
+﻿body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #7700aa;
+  font-family: arial;
+  font-size: 12;
+}
+
+img {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.header {
+  grid-area: header;
+  background-color: #ffffff;
+  width: auto;
+  padding: 10px;
+  margin: 0px;
+  border-radius: 0px;
+  text-align: center;
+}
+
+.titulo1 {
+  color: #660000;
+  font-size: 30px;
+  padding: 0px;
+}
+
+.prod1 {
+  display: grid;
+  background-color: #ffffff40;
+  grid-template-areas:
+    "foto_prod1 nome_prod1"
+    "foto_prod1 descricao_prod1"
+    "foto_prod1 preco_prod1";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  margin: 10px;
+  border: solid 1px red;
+  border-radius: 10px;
+}
+
+.foto_prod1 {
+  display: block;
+  grid-area: foto_prod1;
+  max-width: 100%;
+}
+
+.nome_prod1 {
+  display: block;
+  grid-area: nome_prod1;
+  background-color: #ffffff90;
+  font-size: 20px;
+  color: #7700aa;
+  width: auto;
+  height: fit-content;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.descricao_prod1 {
+  display: block;
+  grid-area: descricao_prod1;
+  font-size: 15px;
+  color: #111111;
+  margin: 20px;
+}
+
+.preco_prod1 {
+  display: block;
+  grid-area: preco_prod1;
+  background-color: #7700aa;
+  font-size: 25px;
+  color: #fff;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: right;
+  justify-content: end;
+}
+
+.footer {
+  display: block;
+  background-color: #111111;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px;
+  margin: 0px;
+  justify-content: end;
+}
