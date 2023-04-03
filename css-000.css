@@ -1,0 +1,187 @@
+﻿html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+header,
+leftmenu,
+main,
+footer,
+object {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+.container {
+  display: grid;
+  background-color: #000000;
+  grid-template-columns: fit-content(550px) 1fr;
+  grid-template-rows: 100px 5fr 1fr;
+  border: solid 1px red;
+  grid-gap: 0px;
+  grid-template-areas:
+    "header header"
+    "leftmenu main"
+    "leftmenu footer";
+}
+
+.header {
+  grid-area: header;
+  padding: 0px;
+  border: solid 1px red;
+}
+
+.leftmenu {
+  grid-area: leftmenu;
+  padding: 0px;
+  border: solid 1px black;
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: fit-content(550px) 1fr;
+  grid-template-rows: 800px;
+  grid-template-areas: "texto-01 divlogo2";
+  border: solid 5px green;
+  background: #331111;
+  background-image: url(vetor/fundo-01.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 550px 550px;
+  color: #d3a21c;
+  z-index: 2;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 0px;
+  border: solid 1px red;
+  border-radius: 150px 10px 150px 10px;
+}
+
+.header,
+.leftmenu,
+.footer {
+  background: #332233;
+  color: orange;
+}
+
+#logo1 {
+  background: #ff000080;
+  width: 230px;
+  height: 90px;
+  padding: 5px;
+  position: relative;
+  left: 0;
+  border-radius: 0px 50px 50px 00px;
+}
+
+#logo2 {
+  width: 200px;
+  height: 200px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#divlogo2 {
+  background: #99999944;
+  width: 200px;
+  height: 200px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 0px 50px 100px 50px;
+  position: absolute;
+  vertical-align: bottom;
+  justify-self: right;
+  border: solid 1px yellow;
+  z-index: 3;
+}
+
+.links-01 {
+  font-family: arial;
+  font-size: 15px;
+  color: #ccc;
+  padding: 0px 10px 0px 10px;
+  margin: 10px;
+  text-decoration: none;
+  z-index: 2;
+}
+
+#texto-01 {
+  border: solid 5px black;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  z-index: 2;
+}
+
+.apresenta-01 {
+  font-family: arial;
+  font-size: 15px;
+  color: #ccc;
+  padding: 0px 10px 0px 10px;
+  margin: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.patrocinadores-01 {
+  font-family: arial;
+  font-size: 15px;
+  color: #ccc;
+  padding: 0px 10px 0px 10px;
+  margin: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-family: Oswald;
+  font-size: 20px;
+  color: #dccd00;
+  padding: 10px;
+  margin: 20px 10px 0px 10px;
+  position: relative;
+  z-index: 2;
+}
+
+h2 {
+  font-family: Oswald;
+  font-size: 15px;
+  color: #dccd00;
+  padding: 10px;
+  margin: 0px 10px 0px 10px;
+  position: relative;
+  z-index: 2;
+}
+
+h3 {
+  font-family: Oswald;
+  font-size: 15px;
+  color: #dccd00;
+  padding: 10px;
+  margin: 20px 10px 0px 10px;
+  position: relative;
+  z-index: 2;
+}
+
+h4 {
+  font-family: Oswald;
+  font-size: 15px;
+  color: #dccd00;
+  padding: 10px;
+  margin: 20px 10px 0px 10px;
+  position: relative;
+  z-index: 2;
+}
